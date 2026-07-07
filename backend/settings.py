@@ -1,11 +1,12 @@
 import os
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from pathlib import Path
 from dotenv import load_dotenv
 from datetime import timedelta
 import dj_database_url
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 load_dotenv()
 
