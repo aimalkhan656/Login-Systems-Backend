@@ -12,6 +12,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-key')
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = ['*']
 
+ROOT_URLCONF = 'backend.urls'
 # ============ DATABASE - Use Render's PostgreSQL ============
 DATABASES = {
     'default': dj_database_url.config(
@@ -48,7 +49,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
     {
