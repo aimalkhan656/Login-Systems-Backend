@@ -17,6 +17,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = ['*']
 
 ROOT_URLCONF = 'backend.urls'
+CSRF_TRUSTED_ORIGINS = ['https://auth-system-x6nu.onrender.com']
 # ============ DATABASE - Use Render's PostgreSQL ============
 DATABASES = {
     'default': dj_database_url.config(
